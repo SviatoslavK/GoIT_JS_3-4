@@ -71,6 +71,6 @@ var ul3Li3 = doc.createElement('li');
 
 var button = doc.createElement('button');
     button.className = "btn btn-default bnt-lg my_btn";
-    button.innerHTML = "Проверить";
+    button.innerHTML = "Проверить мои результаты";
     container.appendChild(button);
 
