@@ -1,3 +1,6 @@
+var question = 3; // Количество вопросов
+var answer = 3; // Количество ответов
+
 var doc = document;
 var parentElem = doc.body;
 
@@ -14,7 +17,7 @@ var ol = doc.createElement('ol');
     ol.className = "question-list";
     container.appendChild(ol);
 
-for (var i = 0; i < 3; i++) {
+for (var i = 0; i < question; i++) {
 
     var li = doc.createElement('li');
     li.innerHTML = "Вопрос №" + [i + 1];
@@ -23,7 +26,7 @@ for (var i = 0; i < 3; i++) {
     var ul = doc.createElement('ul');
     li.appendChild(ul);
 
-    for (var k = 0; k < 3; k++) {
+    for (var k = 0; k < answer; k++) {
         var ulLi = doc.createElement('li');
         ulLi.innerHTML = "<label><input type='checkbox'>  Вариант ответа №" + [k + 1] + "</label>";
         ul.appendChild(ulLi);
